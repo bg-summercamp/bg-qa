@@ -100,6 +100,36 @@
     -webkit-backdrop-filter: blur(4px);
   }
 
+  .back-home {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    transition: background 0.3s ease;
+  }
+
+  .back-home:hover {
+    background: rgba(255,255,255,0.35);
+  }
+
+  .back-home svg {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+  }
+
   .header h1 {
     color: #fff;
     font-size: 28px;
@@ -500,6 +530,7 @@
     .header {
       padding: 36px 16px 32px;
     }
+    .back-home { top: 10px; left: 10px; font-size: 12px; padding: 5px 10px; }
     .header h1 { font-size: 22px; }
     .header p { font-size: 14px; }
     .header-meta { gap: 12px; }
@@ -572,6 +603,13 @@
 
 <!-- ===== Header ===== -->
 <div class="header">
+  <a href="http://www.urgames.cn/" class="back-home">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="19" y1="12" x2="5" y2="12"></line>
+      <polyline points="12 19 5 12 12 5"></polyline>
+    </svg>
+    返回官网
+  </a>
   <div class="header-content">
     <span class="header-badge">夏令营导师实用指南</span>
     <h1>撒开脚丫运动赋能女孩 · 夏令营常见问题答疑汇总</h1>

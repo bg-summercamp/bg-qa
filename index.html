@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>撒开脚丫夏令营常见问题答疑汇总</title>
+<style>
+  :root {
+    --primary: #FF6B35;
+    --primary-light: #FF8F5E;
+    --primary-dark: #E55100;
+    --accent: #F7931E;
+    --accent-light: #FFB74D;
+    --bg-warm: #FFF8F0;
+    --bg-card: #FFFFFF;
+    --bg-soft: #FFF3E6;
+    --text-primary: #3D2C1E;
+    --text-secondary: #6B5544;
+    --text-muted: #9C8B7A;
+    --border: #F0E0D0;
+    --shadow: 0 2px 12px rgba(255, 107, 53, 0.08);
+    --shadow-hover: 0 4px 20px rgba(255, 107, 53, 0.15);
+    --radius: 12px;
+    --radius-sm: 8px;
+    --radius-lg: 16px;
+    --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; -webkit-touch-callout: none; }
+
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: transparent; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+    background: var(--bg-warm);
+    color: var(--text-primary);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
+    overscroll-behavior-y: contain;
+  }
+
+  /* ===== Header ===== */
+  .header {
+    background: linear-gradient(135deg, #FF6B35 0%, #F7931E 50%, #FFB74D 100%);
+    padding: 48px 24px 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 300px;
+    height: 300px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 50%;
+  }
+
+  .header::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -5%;
+    width: 200px;
+    height: 200px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 50%;
+  }
+
+  .header-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .header-badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.25);
+    color: #fff;
+    padding: 4px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }
+
+  .header h1 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  .header p {
+    color: rgba(255,255,255,0.9);
+    font-size: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .header-meta {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+
+  .header-meta span {
+    color: rgba(255,255,255,0.85);
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .header-meta span::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: rgba(255,255,255,0.6);
+    border-radius: 50%;
+  }
+
+  /* ===== Main Container ===== */
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 32px 20px 80px;
+  }
+
+  /* ===== Search Bar ===== */
+  .search-section {
+    margin-bottom: 24px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--bg-warm);
+    padding: 12px 0;
+  }
+
+  .search-box {
+    position: relative;
+    width: 100%;
+  }
+
+  .search-box input {
+    width: 100%;
+    padding: 14px 20px 14px 48px;
+    border: 2px solid var(--border);
+    border-radius: var(--radius);
+    font-size: 16px;
+    background: var(--bg-card);
+    color: var(--text-primary);
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+    -webkit-appearance: none;
+    appearance: none;
+    touch-action: manipulation;
+  }
+
+  .search-box input:focus {
+    outline: none;
+    border-color: var(--primary-light);
+    box-shadow: 0 0 0 3px rgba(255,107,53,0.12);
+  }
+
+  .search-box input::placeholder {
+    color: var(--text-muted);
+  }
+
+  .search-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    color: var(--text-muted);
+  }
+
+  .search-count {
+    margin-top: 8px;
+    font-size: 13px;
+    color: var(--text-muted);
+    padding-left: 4px;
+  }
+
+  /* ===== Category Filter ===== */
+  .category-filter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 28px;
+  }
+
+  /* Fallback for browsers without flex gap support */
+  @supports not (gap: 8px) {
+    .category-filter { gap: 0; }
+    .cat-chip { margin: 0 8px 8px 0; }
+  }
+
+  .cat-chip {
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+    border: 1.5px solid var(--border);
+    background: var(--bg-card);
+    color: var(--text-secondary);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    touch-action: manipulation;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+
+  .cat-chip:hover {
+    border-color: var(--primary-light);
+    color: var(--primary);
+    transform: translateY(-1px);
+  }
+
+  .cat-chip.active {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(255,107,53,0.3);
+  }
+
+  .cat-chip .count {
+    font-size: 11px;
+    opacity: 0.7;
+    margin-left: 2px;
+  }
+
+  /* ===== Q&A List ===== */
+  .qa-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  @supports not (gap: 12px) {
+    .qa-list { gap: 0; }
+    .qa-item { margin-bottom: 12px; }
+  }
+
+  .qa-item {
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    overflow: hidden;
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+  }
+
+  .qa-item:hover {
+    box-shadow: var(--shadow-hover);
+    border-color: var(--primary-light);
+  }
+
+  .qa-question {
+    padding: 18px 20px;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
+  }
+
+  @supports not (gap: 12px) {
+    .qa-question { gap: 0; }
+    .qa-number { margin-right: 12px; }
+    .qa-toggle { margin-left: 8px; }
+  }
+
+  .qa-number {
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    background: var(--bg-soft);
+    color: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 1px;
+  }
+
+  .qa-question-text {
+    flex: 1;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 1.5;
+  }
+
+  .qa-toggle {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    transition: var(--transition);
+    margin-top: 2px;
+  }
+
+  .qa-item.open .qa-toggle {
+    transform: rotate(180deg);
+    color: var(--primary);
+  }
+
+  .qa-answer {
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .qa-item.open .qa-answer {
+    max-height: 5000px;
+  }
+
+  .qa-answer-inner {
+    padding: 0 20px 20px 60px;
+  }
+
+  .qa-answer-text {
+    font-size: 14.5px;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 12px;
+  }
+
+  .qa-answer-text strong {
+    color: var(--primary-dark);
+    font-weight: 600;
+  }
+
+  .qa-answer-text ol, .qa-answer-text ul {
+    padding-left: 20px;
+    margin: 8px 0;
+  }
+
+  .qa-answer-text li {
+    margin-bottom: 4px;
+  }
+
+  .qa-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 8px;
+  }
+
+  .qa-tag {
+    font-size: 12px;
+    padding: 3px 10px;
+    border-radius: 12px;
+    background: var(--bg-soft);
+    color: var(--accent);
+    font-weight: 500;
+  }
+
+  .qa-source {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px dashed var(--border);
+    width: 100%;
+  }
+
+  .qa-source svg {
+    width: 13px;
+    height: 13px;
+    flex-shrink: 0;
+  }
+
+  /* Category-specific colors */
+  .qa-item[data-category="management"] .qa-number { background: #FFF0E6; color: #FF6B35; }
+  .qa-item[data-category="gender"] .qa-number { background: #F3E5F5; color: #8E24AA; }
+  .qa-item[data-category="safety"] .qa-number { background: #FFEBEE; color: #E53935; }
+  .qa-item[data-category="weather"] .qa-number { background: #E3F2FD; color: #1976D2; }
+  .qa-item[data-category="reflection"] .qa-number { background: #F1F8E9; color: #558B2F; }
+  .qa-item[data-category="curriculum"] .qa-number { background: #FFF8E1; color: #F57F17; }
+  .qa-item[data-category="relationship"] .qa-number { background: #FCE4EC; color: #C2185B; }
+  .qa-item[data-category="tools"] .qa-number { background: #E0F7FA; color: #00838F; }
+
+  .qa-item[data-category="management"] .qa-tag { background: #FFF0E6; color: #FF6B35; }
+  .qa-item[data-category="gender"] .qa-tag { background: #F3E5F5; color: #8E24AA; }
+  .qa-item[data-category="safety"] .qa-tag { background: #FFEBEE; color: #E53935; }
+  .qa-item[data-category="weather"] .qa-tag { background: #E3F2FD; color: #1976D2; }
+  .qa-item[data-category="reflection"] .qa-tag { background: #F1F8E9; color: #558B2F; }
+  .qa-item[data-category="curriculum"] .qa-tag { background: #FFF8E1; color: #F57F17; }
+  .qa-item[data-category="relationship"] .qa-tag { background: #FCE4EC; color: #C2185B; }
+  .qa-item[data-category="tools"] .qa-tag { background: #E0F7FA; color: #00838F; }
+
+  /* No results */
+  .no-results {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-muted);
+    display: none;
+  }
+
+  .no-results svg {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 12px;
+    opacity: 0.4;
+  }
+
+  /* ===== Footer ===== */
+  .footer {
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--text-muted);
+    font-size: 13px;
+    border-top: 1px solid var(--border);
+    margin-top: 40px;
+  }
+
+  .footer a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .footer a:hover {
+    text-decoration: underline;
+  }
+
+  .footer-info {
+    margin-top: 8px;
+    font-size: 12px;
+    opacity: 0.7;
+  }
+
+  /* ===== Responsive ===== */
+  @media (max-width: 640px) {
+    .header {
+      padding: 36px 16px 32px;
+    }
+    .header h1 { font-size: 22px; }
+    .header p { font-size: 14px; }
+    .header-meta { gap: 12px; }
+    .header-meta span { font-size: 12px; }
+    .container { padding: 24px 12px 60px; }
+    .qa-question { padding: 16px 14px; gap: 10px; }
+    .qa-number { width: 26px; height: 26px; font-size: 12px; }
+    .qa-question-text { font-size: 15px; }
+    .qa-answer-inner { padding: 0 14px 16px 50px; }
+    .qa-answer-text { font-size: 15px; line-height: 1.8; }
+    .cat-chip { padding: 9px 16px; font-size: 13px; }
+    .search-box input { font-size: 16px; padding: 13px 18px 13px 46px; }
+    .qa-tag { font-size: 12px; padding: 4px 10px; }
+    .qa-source { font-size: 12px; }
+    .footer { padding: 32px 16px; font-size: 12px; }
+    .footer-info { font-size: 11px; }
+  }
+
+  /* ===== Extra small screens (WeChat mini browser) ===== */
+  @media (max-width: 375px) {
+    .header h1 { font-size: 19px; }
+    .header p { font-size: 13px; }
+    .header-meta { gap: 8px; }
+    .header-meta span { font-size: 11px; }
+    .qa-question-text { font-size: 14px; }
+    .qa-answer-text { font-size: 14px; }
+    .qa-answer-inner { padding: 0 12px 14px 46px; }
+  }
+
+  /* ===== Landscape phone ===== */
+  @media (max-width: 896px) and (orientation: landscape) {
+    .header { padding: 28px 20px 24px; }
+  }
+
+  /* Highlight */
+  mark {
+    background: rgba(255, 179, 0, 0.3);
+    color: inherit;
+    border-radius: 3px;
+    padding: 0 2px;
+  }
+
+  /* ===== WeChat-specific fixes ===== */
+  /* Prevent text selection on long press for interactive elements */
+  .cat-chip, .qa-question, .qa-number, .qa-toggle {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    user-select: none;
+  }
+
+  /* Allow text selection in answer content */
+  .qa-answer-text, .qa-source, .qa-tag {
+    -webkit-user-select: text;
+    -webkit-touch-callout: default;
+    user-select: text;
+  }
+
+  /* Prevent iOS Safari zoom on input focus */
+  @media (max-width: 640px) {
+    .search-box input { font-size: 16px !important; }
+  }
+
+  /* Safe area padding for notch devices */
+  @supports (padding: env(safe-area-inset-bottom)) {
+    .footer { padding-bottom: calc(40px + env(safe-area-inset-bottom)); }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<div class="header">
+  <div class="header-content">
+    <span class="header-badge">夏令营导师实用指南</span>
+    <h1>撒开脚丫运动赋能女孩 · 夏令营常见问题答疑汇总</h1>
+    <p>基于三场课程导师线上交流会的实战经验整理，涵盖课堂管理、安全防护、课程理念等八大主题，助力大学生导师应对夏令营各类场景</p>
+    <div class="header-meta">
+      <span>52 个常见问题</span>
+      <span>8 大主题分类</span>
+      <span>3 场交流会精华</span>
+      <span>持续更新中</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Main ===== -->
+<div class="container">
+
+  <!-- Search -->
+  <div class="search-section">
+    <div class="search-box">
+      <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+      <input type="text" id="searchInput" placeholder="搜索问题关键词，如：秩序、高温、分组、感受课…" oninput="handleSearch()">
+    </div>
+    <div class="search-count" id="searchCount"></div>
+  </div>
+
+  <!-- Category Filter -->
+  <div class="category-filter" id="categoryFilter">
+    <div class="cat-chip active" data-cat="all" onclick="filterCategory('all')">全部 <span class="count">(52)</span></div>
+    <div class="cat-chip" data-cat="management" onclick="filterCategory('management')">课堂管理与秩序 <span class="count">(9)</span></div>
+    <div class="cat-chip" data-cat="gender" onclick="filterCategory('gender')">性别差异与分组 <span class="count">(5)</span></div>
+    <div class="cat-chip" data-cat="safety" onclick="filterCategory('safety')">安全与应急 <span class="count">(4)</span></div>
+    <div class="cat-chip" data-cat="weather" onclick="filterCategory('weather')">天气与场地 <span class="count">(4)</span></div>
+    <div class="cat-chip" data-cat="reflection" onclick="filterCategory('reflection')">感受课优化 <span class="count">(4)</span></div>
+    <div class="cat-chip" data-cat="curriculum" onclick="filterCategory('curriculum')">课程理念与教学法 <span class="count">(12)</span></div>
+    <div class="cat-chip" data-cat="relationship" onclick="filterCategory('relationship')">关系建立与沟通 <span class="count">(7)</span></div>
+    <div class="cat-chip" data-cat="tools" onclick="filterCategory('tools')">工具与资源 <span class="count">(7)</span></div>
+  </div>
+
+  <!-- Q&A List -->
+  <div class="qa-list" id="qaList"></div>
+
+  <!-- No Results -->
+  <div class="no-results" id="noResults">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="11" cy="11" r="8"></circle>
+      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      <line x1="8" y1="11" x2="14" y2="11"></line>
+    </svg>
+    <p>没有找到匹配的问题，试试换个关键词？</p>
+  </div>
+
+</div>
+
+<!-- ===== Footer ===== -->
+<div class="footer">
+  <p>撒开脚丫运动赋能女孩 · 夏令营导师答疑手册</p>
+  <div class="footer-info">
+    内容来源：2026年7月13日、7月20日 & 7月27日 课程导师线上交流会逐字稿<br>
+    整理时间：2026年7月28日 · 本文档可持续迭代更新
+  </div>
+</div>
+
+<script>
+// ===== Q&A Data =====
+const qaData = [
+  // --- 课堂管理与秩序 ---
+  { id: 1, category: "management", categoryLabel: "课堂管理与秩序",
+    question: "学生在讲解规则时抢答、扰乱秩序怎么办？",
+    answer: "用高效能沟通中的<strong>「我信息」</strong>来表达情绪——例如：「同学们，你们都在讲话的时候，老师谁都听不见了，我不知道你们在说什么。我们能不能制定一个小规则——当教练说可以提问或发言的时候，大家再来？」<br><br>把它当平等的对话，不用担心孩子听不懂。第一次可以问：「教练这样说，大家能听明白吗？」对遵守规则的孩子给予<strong>明确表扬和击掌</strong>——「我觉得小明同学很棒，他有什么想法会先举手，不会打断别人讲话。」这样孩子就知道教练希望我怎么做。",
+    source: "第二场交流会 · NeilHuang回应",
+    tags: ["我信息", "规则共建", "表扬激励"] },
+
+  { id: 2, category: "management", categoryLabel: "课堂管理与秩序",
+    question: "「Hello-Hi」口令效果逐渐变差怎么办？",
+    answer: "可以改为<strong>与孩子共建规则</strong>——在互动中让大家一起参与制定：「大家觉得当教练发现场上有不可控场景，或者教练想说话希望你们都来听的时候，我们该怎么办？一起想一个口号。」<br><br>让孩子参与制定规则，能帮助他们更好地遵守——因为这规则是<strong>「我来造的」</strong>，而不是一直在听老师布置任务，印象会更深，配合度也更高。",
+    source: "第二场交流会 · NeilHuang回应",
+    tags: ["口令", "规则共建", "参与感"] },
+
+  { id: 3, category: "management", categoryLabel: "课堂管理与秩序",
+    question: "有些孩子过于积极、有些完全不参与怎么办？",
+    answer: "<strong>对于过于积极的孩子：</strong>给予选择权（6C中的Choice），询问他们的想法——「你们有没有自己想玩的游戏？有什么好主意？」让他们觉得自己的需求被关注到。<br><br><strong>对于不参与的孩子：</strong>先接纳当下的状态，不需要马上邀请或强迫参与。可以在课后或一对一的时候聊一聊：「老师觉得刚才人比较多，看到你和我们互动好像不是特别多，有什么问题吗？教练可以帮到你什么？」让孩子觉得教练关注到他了。经过几天慢慢会好一些，这个过程不需要太着急。",
+    source: "第二场交流会 · NeilHuang回应",
+    tags: ["差异化引导", "接纳", "一对一沟通"] },
+
+  { id: 4, category: "management", categoryLabel: "课堂管理与秩序",
+    question: "如何调动孩子的参与积极性，让他们因兴趣主动参与？",
+    answer: "核心记住<strong>3F原则</strong>和<strong>6C教练理念</strong>：<br><br><strong>3F：</strong>Fun（好玩）——创造开心放松的氛围，输赢不评判好坏；Friends（伙伴互动）——设计让孩子之间有互动配合的环节；Feedback（正反馈）——给予明确的表扬和肯定。<br><br><strong>6C重点运用：</strong>Choice（选择权）——当孩子有自己想法时给选择空间；Contribution（贡献感）——给不同角色（小助手、小裁判、示范者）；Connection（情感联系）——多分享值得肯定的点。<br><br>挑战难度要「稍微跳一跳够得着」，不能太难也不能太幼稚。灵活运用3F和6C，没有孩子不愿意玩。",
+    source: "第一场交流会 · NeilHuang讲解",
+    tags: ["3F原则", "6C理念", "参与积极性"] },
+
+  // --- 性别差异与分组 ---
+  { id: 5, category: "gender", categoryLabel: "性别差异与分组策略",
+    question: "男生想玩竞技球类、女生非常内敛，怎么平衡？",
+    answer: "可以采取<strong>分流策略</strong>——让想打球的男生由志愿者带去打球，剩下想参与的女生开展撒开脚丫课程。不必强求所有男生加入，撒开脚丫项目本身是为<strong>「想参与但缺少机会、邀请或勇气的孩子」</strong>设计的。<br><br>同时提前做好<strong>预沟通</strong>——每天结束前给第二天的活动做预告，说明为什么要做这件事，让孩子有前置的心理准备。不是到了现场一说完大家就散了。",
+    source: "第一场交流会 · 王子怡分享 & NeilHuang回应",
+    tags: ["分流策略", "预沟通", "项目定位"] },
+
+  { id: 6, category: "gender", categoryLabel: "性别差异与分组策略",
+    question: "男女混合分组时男生总赢、女生气氛不好怎么办？",
+    answer: "两种思路：<br><br><strong>方案一：</strong>男女生完全分开各自开展活动，各自跟同性别PK。<br><br><strong>方案二：</strong>一个男生队伍和一个女生队伍组成<strong>联合分队</strong>。自由组队完后，最终形成PK的队伍是「男生队+女生队」的组合，保证每个小组里男女比例差不多，避免男生和女生直接PK。",
+    source: "第一场交流会 · NeilHuang回应",
+    tags: ["混合分组", "联合分队", "公平性"] },
+
+  { id: 7, category: "gender", categoryLabel: "性别差异与分组策略",
+    question: "高年级男生女生有性别隔阂、不愿互动怎么办？",
+    answer: "进入高年级后出现性别意识是<strong>很自然的发展阶段</strong>，不必焦虑。<br><br>可以<strong>男女分开开展</strong>——男生独立玩自己的内容，女生和小一点的男生在一起，这都没问题。<br><br>对于<strong>害羞落单的女生</strong>，教练可以主动跟她做一组，或者再找一个同学，协助形成三人组：「当她主动性不高的时候，教练去主动一点。」<br><br>围圈拉手游戏中如果男生和女生拉在一起、另一边又断了，教练可以站在中间做连接点，逐步引导。",
+    source: "第二场交流会 · 罗浚轩分享 & NeilHuang回应",
+    tags: ["性别意识", "分开开展", "教练配组"] },
+
+  { id: 8, category: "gender", categoryLabel: "性别差异与分组策略",
+    question: "女生动作幅度小、不敢表现自己怎么办？",
+    answer: "<strong>循序渐进</strong>是关键。如果连开合跳都难以接受，不要急于上舞蹈运动——让她们做更多运动动作的话可能会回避、冷场。<br><br>先通过运动游戏慢慢建立安全感和熟悉度。经过两三天，除了上课时跟她们聊，平时非上课时间也有机会聊聊天、讲讲话，把关系拉近。关系近了、觉得老师值得靠近，她们可能就愿意表达了。<br><br>对个别特别内敛的孩子，可以自己先做示范多跳几下，带着她一起，慢慢节奏就好起来了。",
+    source: "第一场交流会 · 王子怡分享 & NeilHuang回应",
+    tags: ["循序渐进", "安全感", "关系建立"] },
+
+  // --- 安全与应急 ---
+  { id: 9, category: "safety", categoryLabel: "安全与应急处置",
+    question: "游戏中孩子碰撞受伤怎么预防？",
+    answer: "提前判断两种风险：<br><br><strong>① 场地条件：</strong>地面湿滑、坑坑洼洼或有尖锐物品。<br><strong>② 游戏设计：</strong>存在正面冲撞或面对面奔跑、身体接触抢夺物品的环节。<br><br>如果发现可控性差，优先设计<strong>同向运动</strong>（如接力类），或让他们反向朝不同方向去取物品放到不同位置，避免直接冲撞。<br><br>游戏前要提醒注意事项——不要冲撞、注意速度、做好控制。中小龄段孩子玩起来容易忘记，更要在游戏方向设计时就考虑这个点。",
+    source: "第二场交流会 · NeilHuang回应",
+    tags: ["碰撞预防", "同向运动", "场地检查"] },
+
+  { id: 10, category: "safety", categoryLabel: "安全与应急处置",
+    question: "应急物资和医疗对接怎么准备？",
+    answer: "<strong>物资准备：</strong>备齐创可贴、消毒棉球等急救用品，放在固定位置，确保现场所有志愿者都知道。<br><br><strong>医疗对接：</strong>提前了解学校医务室位置和联系人，把联系方式提前拿到手，线上或电话都能快速找到合适的人。<br><br><strong>沟通方面：</strong>提前知道需要对接的事和人，把联系方式提前拿到，出现问题时能快速响应。",
+    source: "第一场交流会 · NeilHuang回应",
+    tags: ["急救物资", "医务室", "联系方式"] },
+
+  { id: 11, category: "safety", categoryLabel: "安全与应急处置",
+    question: "小朋友运动中出现情绪问题或小擦伤怎么处理？",
+    answer: "<strong>志愿者可自行处理的：</strong>小朋友运动中有情绪或小擦伤，简单处理即可。<br><br><strong>需要团队协作的：</strong>一个志愿者搞不定时，需要大家一起甚至找学校老师协助解决冲突或受伤问题。<br><br>关键是在活动前就做好预案，知道什么情况自己处理、什么情况需要求助。",
+    source: "第一场交流会 · NeilHuang回应",
+    tags: ["情绪处理", "擦伤", "团队协作"] },
+
+  // --- 天气与场地 ---
+  { id: 12, category: "weather", categoryLabel: "天气与场地限制",
+    question: "30-35°C高温天气怎么开展户外运动？",
+    answer: "<strong>挑最凉快的时间和阴凉场地</strong>，但即使如此也可能运动量受限。具体调整：<br><br>① <strong>缩短运动时长</strong>至5-8分钟，避免长时间暴晒；<br>② <strong>探索室内替代场地</strong>——食堂、空教室等；<br>③ <strong>设计不需要跑动的原地或小范围互动活动</strong>——原地跳跃、气球传球、用头顶球等小空间内互动；<br>④ 密切关注孩子状态，有中暑迹象立即停止活动。",
+    source: "第一场交流会 · 王子怡分享 & NeilHuang回应",
+    tags: ["高温", "缩短时长", "室内替代"] },
+
+  { id: 13, category: "weather", categoryLabel: "天气与场地限制",
+    question: "室内空间有限，游戏施展不开怎么办？",
+    answer: "三个方向设计室内游戏：<br><br><strong>① 小范围肢体配合类：</strong>大家拍手、跺脚或拍腿发出不同声音，组成一个「乐团」——这边按节奏跺脚，那边配合。<br><br><strong>② 击鼓传花类：</strong>拿瓶子、纸团或身边小道具做传递接力。<br><br><strong>③ 轻便道具空中挑战：</strong>气球是非常好的室内道具——用手拍或不用手只能用其他部位传球看能坚持多少次不落地；两队看谁把气球先拍到对方场地。没有气球可用塑料袋扎成可飘的形状，或拿纸巾——三层拆开变成最薄一张，让孩子吹、来回飘。<br><br>不需要大肢体跑动，通过小道具组合和节奏韵律设计互动。网上也有很多这类小范围游戏。",
+    source: "第二场交流会 · NeilHuang回应",
+    tags: ["室内游戏", "气球", "小道具"] },
+
+  { id: 14, category: "weather", categoryLabel: "天气与场地限制",
+    question: "连续下雨只能室内活动，方案不够用怎么办？",
+    answer: "借助<strong>AI工具</strong>生成游戏方案（WorkBuddy/ChatGPT），使用<strong>「提示词三步法」</strong>：<br><br><strong>第一步：</strong>描述需求——「我带领40个小朋友，年龄段X，运动空间是Y平米的教室，能用到标志桶、气球等道具，让20个孩子安全参与的游戏方式，给我出10个点子。」<br><br><strong>第二步：</strong>先加一句「我需要你复述一下我的需求，让我来确认。把没想到的也加进来，然后跟我确认。」AI会形成更完善的提示词。<br><br><strong>第三步：</strong>确认后说「基于提示词给我生成10个游戏，每个讲清目标、规则流程和注意点。」<br><br>推荐工具：WorkBuddy（国内直接用）、ChatGPT（需翻墙）。让AI成为每天工作的助教。",
+    source: "第二场交流会 · 王丽娜分享 & NeilHuang回应",
+    tags: ["AI辅助", "提示词工程", "室内方案"] },
+
+  // --- 感受课优化 ---
+  { id: 15, category: "reflection", categoryLabel: "感受课/复盘课优化",
+    question: "感受课参与度低、孩子不知道怎么表达怎么办？",
+    answer: "<strong>① 降低表达门槛——具象化提问：</strong>不要问「怎么互相激励」这种抽象话题，改为「刚才游戏里你觉得谁最厉害？」「你觉得自己哪方面表现得特别厉害？」「给你印象比较深的是什么环节？」让他们写写画画也可以。<br><br><strong>② 游戏化互动——角色扮演：</strong>让比较兴奋的小朋友当「小记者」去采访别人，互相采访，用他们的语言表达感受。<br><br><strong>③ 站位打分：</strong>「觉得自己体力状态非常饱满的，十分的站这边，已经挺累的七、八分的站那边」——互动有肢体参与、有两人交流，而不是单纯思考抽象问题。",
+    source: "第一场交流会 · NeilHuang回应",
+    tags: ["具象化提问", "游戏化", "角色扮演"] },
+
+  { id: 16, category: "reflection", categoryLabel: "感受课/复盘课优化",
+    question: "从运动场回到教室后孩子静不下来怎么办？",
+    answer: "<strong>先做状态过渡：</strong>玩完游戏后做简单的拉伸、呼吸或慢走，让他们调整身体状态。<br><br>回到教室后不要急于变成「上课」氛围——如果依然比较兴奋，可以<strong>继续玩游戏</strong>，通过扮演角色不同角色的方式让他们互动交流。保持运动时的积极状态过渡到室内。<br><br>核心是<strong>换位思考</strong>：要求孩子安静下来听老师说，那个状态就被拉回到「上课了」的感觉，她们就不太愿意分享了。需要持续让她们意识到：我们创造的氛围是安全的、放松的，可以继续表达的。",
+    source: "第一场交流会 · NeilHuang回应",
+    tags: ["状态过渡", "拉伸呼吸", "安全氛围"] },
+
+  { id: 17, category: "reflection", categoryLabel: "感受课/复盘课优化",
+    question: "感受课上孩子集体沉默、不表达怎么办？",
+    answer: "尝试<strong>小组PK、合作挑战或知识竞赛抢答</strong>的方式，让体验基于孩子比较感兴趣的形式。<br><br>同时要判断：是内容太难，还是她们平时表达机会少？是不是一进教室就变成了「上课」的感觉，她们就回到了以往不主动的状态？<br><br>如果感受环节在室外刚结束时就做一些尝试，让她们保持户外的积极状态，回到教室再延续，慢慢改变她们对环境的回忆和状态。",
+    source: "第一场交流会 · NeilHuang回应",
+    tags: ["小组PK", "知识竞赛", "环境转换"] },
+
+  { id: 18, category: "reflection", categoryLabel: "感受课/复盘课优化",
+    question: "匿名卡片分享变成了猜「这是谁写的」怎么办？",
+    answer: "将重心从「谁写的」引导回<strong>讨论内容本身</strong>。调整提问方式，让问题更具体、更贴近刚才的活动体验，减少猜测空间。<br><br>也可以改为<strong>公开分享+口头表达</strong>——不用卡片，直接让愿意分享的孩子站起来说，或者用采访的形式（小记者提问），把注意力集中在感受内容上而非形式上。",
+    source: "第一场交流会 · 王施懿分享 & NeilHuang回应",
+    tags: ["匿名卡片", "注意力引导", "口头表达"] },
+
+  // --- 课程理念与教学法 ---
+  { id: 19, category: "curriculum", categoryLabel: "课程理念与教学法",
+    question: "「动出身体自信」课程的核心逻辑是什么？",
+    answer: "课程有三个维度：<br><br><strong>① 身体谈论（Body Talk）：</strong>引导学生关注身体功能而非外貌，学会拒绝或转移关于外貌的负面评价。<br><br><strong>② 身体功能（Body Function）：</strong>通过运动体验，让学生感知身体各部位（如心脏、大脑、肌肉）在活动中的作用，建立功能自信。<br><br><strong>③ 身体倾听（Body Listening）：</strong>教导学生识别身体的信号（如口渴、疲劳），并给予科学回应（如补水、休息）。",
+    source: "第一场交流会 · NeilHuang讲解",
+    tags: ["身体谈论", "身体功能", "身体倾听"] },
+
+  { id: 20, category: "curriculum", categoryLabel: "课程理念与教学法",
+    question: "3F原则具体是什么？怎么运用？",
+    answer: "<strong>3F = Fun + Friends + Feedback</strong><br><br><strong>Fun（好玩）：</strong>创造开心放松的氛围，让孩子觉得这个地方有趣、老师也和蔼可亲。不会觉得有什么压力，输赢结果不会评判他做得好不好。<br><br><strong>Friends（伙伴互动）：</strong>设计让孩子之间有互动配合的环节——哪怕互相拉着手一起跑，或一块做热身放松，孩子互相看着都会很开心、笑起来，就会有更多参与意向。<br><br><strong>Feedback（正反馈）：</strong>给予明确的表扬和肯定，不是泛泛的「很好」，而是具体指出哪里好。<br><br>符合这三个基本要求，没有孩子不想玩。",
+    source: "第一场交流会 · NeilHuang讲解",
+    tags: ["3F", "Fun", "Friends", "Feedback"] },
+
+  { id: 21, category: "curriculum", categoryLabel: "课程理念与教学法",
+    question: "6C教练理念中哪些最常用？",
+    answer: "重点运用以下三个：<br><br><strong>① Choice（选择权）：</strong>当孩子有自己的想法和兴趣时，根据实际情况给到他们选择空间。比如男生想去打篮球，就让他们去打。<br><br><strong>② Contribution（贡献感）：</strong>给不同角色——身体不舒服或不能参与的孩子做小助手，特别积极的孩子做示范。发挥不同策略帮助激发参与性，通过选择权提高自主性和主人翁精神。<br><br><strong>③ Connection（建立情感联系）：</strong>在总结环节多分享孩子们在过程中值得肯定的点，给予明确的表扬和正反馈。让孩子觉得教练关注我、对我特别好。",
+    source: "第一场交流会 · NeilHuang讲解",
+    tags: ["6C", "Choice", "Contribution", "Connection"] },
+
+  { id: 22, category: "curriculum", categoryLabel: "课程理念与教学法",
+    question: "BSC课程如何与运动游戏串联？不要讲完就扔到一边。",
+    answer: "在撒开脚丫的后续运动游戏中（不管是舞蹈游戏还是运动游戏），<strong>有意识但不刻意地引入BSC内容</strong>做回顾强化：<br><br>轻轻一带：「你的身体感受到了什么？」「在运动中有没有人说让你伤心或不自信的话？你当时什么感觉？有没有用到我们讲的正向反驳？」<br><br>有学生说用到了，说明他们真能运用到实际中。在恰当时间问回顾性问题是帮助孩子加强印象的重要做法。",
+    source: "第二场交流会 · 刘怡彤（小花）分享 & NeilHuang回应",
+    tags: ["BSC", "课程串联", "回顾强化"] },
+
+  { id: 23, category: "curriculum", categoryLabel: "课程理念与教学法",
+    question: "「零身体谈论区」孩子听不懂怎么办？",
+    answer: "用<strong>更通俗、口语化的方式</strong>再讲一遍。第一遍大家默不作声，就换种说法。<br><br>课后不要就此放过去——专门在下课时找几个女生，问她们：<br>① 这节课讲的是什么？<br>② 在运动中会不会听到一些谈论？<br>③ 如果下次遇到应该怎么正向反驳？<br><br>通过这种方式加深她们对课堂内容的印象。",
+    source: "第二场交流会 · 刘怡彤（小花）分享",
+    tags: ["口语化讲解", "课后确认", "正向反驳"] },
+
+  { id: 24, category: "curriculum", categoryLabel: "课程理念与教学法",
+    question: "抽象课程内容怎么让孩子理解？",
+    answer: "<strong>体验式教学</strong>——把抽象概念变成具体体验。<br><br>例如「身体谈论」有正向的、负向的、不痛不痒的——纯讲理论孩子觉得很无聊。可以变成<strong>「红绿灯游戏」</strong>：说出来的话是积极正向肯定我能力的，大家到绿灯区；不正向的到红灯区。让他们用身体投票、身体移动来理解知识。<br><br>站在孩子的视角思考：他有收获吗？他能理解或感受吗？发现内容偏理论化、孩子听不懂时，接下来的方式就要用更通俗的，甚至变成游戏形式来体现。游戏化就是帮助孩子用具象的东西去理解抽象概念。",
+    source: "第二场交流会 · NeilHuang回应",
+    tags: ["体验式教学", "红绿灯游戏", "游戏化"] },
+
+  { id: 25, category: "curriculum", categoryLabel: "课程理念与教学法",
+    question: "「三步放松法」怎么实施？",
+    answer: "<strong>第一步：察觉身体</strong>——现在身体需要什么？<br><strong>第二步：回应身体</strong>——孩子说需要睡觉，就给5-10分钟的睡觉时间，让她们趴在桌上睡。虽然传统意义上上课睡觉不太好，但这符合撒开脚丫「回应身体需求」的理念。<br><strong>第三步：活动身体</strong>——身体回应完后，把她们带出去活动。<br><br>实施后发现：之后的课上大家都很配合，回答问题都很积极，主动性和回答效果明显提升。",
+    source: "第二场交流会 · 刘怡彤（小花）分享",
+    tags: ["三步放松法", "察觉身体", "回应需求"] },
+
+  { id: 26, category: "curriculum", categoryLabel: "课程理念与教学法",
+    question: "观影课怎么上效果更好？",
+    answer: "<strong>① 片段式播放</strong>而非全程观看，虽然是英文孩子听不懂，但稍作翻译让他们理解故事内容。<br><strong>② 利用画面和音乐搭配</strong>激发情绪——孩子更容易被视觉和听觉激发。<br><strong>③ 种下自信种子</strong>——影片人物名字Faith英文谐音「信念」，可从观影课就引入这个概念，为后续课程铺垫。<br><br>把观影课放在主题一开营之后进行，在开营时就给孩子们心里种下运动赋能的种子，后续开展撒开脚丫时他们已有这个意识。",
+    source: "第二场交流会 · 刘怡彤（小花）分享",
+    tags: ["观影课", "片段播放", "Faith信念"] },
+
+  // --- 关系建立与沟通 ---
+  { id: 27, category: "relationship", categoryLabel: "关系建立与沟通",
+    question: "记不住学生名字怎么办？",
+    answer: "<strong>① 准备姓名贴纸</strong>——第一天来参加时就让她们贴上。<br><strong>② 分组时安排志愿者专门负责</strong>——不同志愿者专门负责哪几个小组，重点了解几个女生或男生的情况和名字。<br><strong>③ 现场叫名字时让协助的人多叫几次</strong>——感觉会不一样。<br><br>记住名字是建立信任和进行个性化鼓励表扬的基础，在紧张情况下要处理很多信息确实容易记不住，借助工具和团队分工可以缓解。",
+    source: "第一场交流会 · NeilHuang回应",
+    tags: ["姓名贴纸", "志愿者分工", "个性化关注"] },
+
+  { id: 28, category: "relationship", categoryLabel: "关系建立与沟通",
+    question: "如何快速与学生建立信任关系？",
+    answer: "教练第一步是<strong>建立情感联系（Connection）</strong>——让孩子觉得教练很有趣、讲话很舒服、很关注我、对我们特别好，这样他才愿意听你的。<br><br>一开始要有<strong>破冰环节</strong>：让他们知道我是谁、我有什么让人印象深刻的技能或特长，或者有一些有趣的点能一下子拉近关系。<br><br>除了上课，平时非上课时间也要聊聊天、讲讲话，把关系拉近。可以询问前两天大家不好意思做运动的原因，更多地了解她们的想法。站在用户视角——她们是「消费者」也好、「用户」也好，我们需要了解她们到底是什么状态。",
+    source: "第一场 & 第二场交流会 · NeilHuang回应",
+    tags: ["Connection", "破冰", "情感联系"] },
+
+  { id: 29, category: "relationship", categoryLabel: "关系建立与沟通",
+    question: "有孩子说「游戏一点都不好玩」怎么办？",
+    answer: "<strong>允许这些孩子的存在</strong>，不因此影响自己的信心——大部分孩子特别喜欢这堂课，大部分喜欢就证明你带的是没有问题的。<br><br>这些孩子<strong>更需要一对一的关注和鼓励</strong>。经过志愿者老师跟他一对一交流或鼓励之后，大部分孩子的天性还是很好的，会变得很配合。<br><br>之前有孩子在心灵卡片上写「游戏一点都不好，我非常讨厌玩游戏」，其他志愿者看到后比较生气。但看到之后内心要平静——有大部分孩子特别喜欢这堂课，那些说不好话的孩子更需要关注。志愿者的正向引导非常重要。",
+    source: "第二场交流会 · 刘怡彤（小花）分享",
+    tags: ["问题小孩", "一对一关注", "心态调整"] },
+
+  { id: 30, category: "relationship", categoryLabel: "关系建立与沟通",
+    question: "学生把标志盘当帽子戴、不按规则玩怎么办？",
+    answer: "<strong>顺着他的创意走</strong>——「你这个做法跟原先的游戏规则不一样！我们要么第一轮先按你的游戏规则来——标志盘可以戴在头上。」<br><br>让他觉得自己的创意被接受了，给了他一个<strong>贡献和选择的机会</strong>。然后第二轮再跟他说：「现在教练有规则了，你们得跟着来。」<br><br>让他在过程中觉得自己很厉害——我想出来的点子教练接受了。这样顺着走，他就会愿意听你的。",
+    source: "第二场交流会 · NeilHuang回应",
+    tags: ["顺应创意", "贡献感", "选择权"] },
+
+  { id: 31, category: "relationship", categoryLabel: "关系建立与沟通",
+    question: "如何与家长沟通运动课程的价值？",
+    answer: "首先判断在什么场景下有机会跟家长沟通，然后<strong>从家长的需求和关注点出发</strong>——家长关心的是孩子身心健康、学习好、少生病。<br><br>讲运动对大脑发展的作用：通过运动，孩子的大脑会得到怎样的变化，<strong>专注力、自信心都会有提升</strong>。运动能促进身体健康和心理健康，对女孩子来讲跟男生一样重要。站在家长的视角去讲，他们才听得进去。<br><br>这个问题也可以让AI协助——把家长的情况描述给AI，让它作为专业教练帮你提供话术。",
+    source: "第二场交流会 · NeilHuang回应",
+    tags: ["家长沟通", "换位思考", "AI辅助话术"] },
+
+  // --- 工具与资源 ---
+  { id: 32, category: "tools", categoryLabel: "工具与资源",
+    question: "物资可以报销吗？报销额度多少？",
+    answer: "只要是开展运动、舞蹈课程所需的物资（如气球、急救医疗包等），均可列入清单进行报销。<br><br><strong>每队报销额度：400元</strong>。<br><br>注意整理并提交物资采购清单用于报销。",
+    source: "第一场交流会 · 郑玉荣提问 & 北京益微青年公益发展中心回答",
+    tags: ["物资报销", "400元额度", "采购清单"] },
+
+  { id: 33, category: "tools", categoryLabel: "工具与资源",
+    question: "如何用AI辅助设计课程活动？",
+    answer: "使用<strong>「提示词三步法」</strong>：<br><br><strong>第一步：描述需求并让AI复述确认</strong><br>「我带领40个小朋友，年龄段是多少，运动空间是多大面积的教室。在教室里我要保证安全，能用到的道具是标志桶、气球或其他容易找到的道具，能让所有20个孩子安全参与进来的游戏方式，给我出10个点子。」<br>加一句：「我需要你复述一下我的需求，让我来确认。把没想到的也加进来，然后跟我确认。」<br><br><strong>第二步：AI完善需求形成结构化提示词</strong><br>AI会形成逻辑清晰的、完善的提示词。<br><br><strong>第三步：确认后生成具体方案</strong><br>「我确认，基于提示词给我生成10个游戏，每个游戏讲清楚目标、规则流程和注意点。」<br><br>推荐工具：WorkBuddy（国内直接用）、ChatGPT（需翻墙）。",
+    source: "第二场交流会 · NeilHuang讲解",
+    tags: ["AI辅助", "提示词三步法", "WorkBuddy"] },
+
+  { id: 34, category: "tools", categoryLabel: "工具与资源",
+    question: "活动素材怎么留存和记录？",
+    answer: "<strong>记录要素：</strong>这是什么活动、什么时间、活动名字、有什么特点和亮点、孩子们有什么给你印象比较深的反馈。<br><br><strong>小组分工：</strong>在小组里可以做分工，每个人负责记录不同方面。<br><br><strong>工具推荐：</strong>现场写比较麻烦，现在都用语音转文字工具——讯飞、豆包、千问等录音转文字工具，把现场看到的内容录下来转文字，匹配到素材上面去，非常灵活。",
+    source: "第一场交流会 · NeilHuang回应",
+    tags: ["素材留存", "语音转文字", "小组分工"] },
+
+  { id: 35, category: "tools", categoryLabel: "工具与资源",
+    question: "第一次带队怎么串联课程流程？",
+    answer: "核心流程：<strong>连接 → 热身 → 活动 → 放松 → 复盘</strong><br><br><strong>连接：</strong>「我是谁？同学们，我们今天要干嘛？」有开场把大家联动起来。<br><strong>热身：</strong>让身体准备好。<br><strong>活动：</strong>开展运动游戏或课程。<br><strong>放松：</strong>拉伸、呼吸调整。<br><strong>复盘：</strong>感受分享、回顾。<br><br>第一次需要在前期做一些<strong>刻意练习或模拟</strong>——假设现在有孩子，我怎么去模拟教学。习惯后就很顺。",
+    source: "第二场交流会 · NeilHuang回应",
+    tags: ["课程流程", "连接热身活动放松复盘", "刻意练习"] },
+
+  { id: 36, category: "tools", categoryLabel: "工具与资源",
+    question: "孩子觉得队友「拖后腿」产生分歧怎么办？",
+    answer: "<strong>助教老师去协调</strong>——站在比较乱的区域旁边带着他们一起玩。<br><br>在观影课上<strong>强调同伴之间的协作力量</strong>——如影片中菲斯的成功不仅仅是靠自己，还有台下观众的欢呼和教练的帮助。<br><br>撒开脚丫的理念对大学生来说好理解，但对小朋友来说需要用<strong>口语化、生活化的方式</strong>去传递。",
+    source: "第二场交流会 · 刘怡彤（小花）分享",
+    tags: ["团队分歧", "协作力量", "口语化传递"] },
+
+  // --- 第三场交流会新增 ---
+  { id: 37, category: "management", categoryLabel: "课堂管理与秩序",
+    question: "少数孩子不听指令、觉得不好玩或抵触参与，影响教练信心怎么办？",
+    answer: "这不是单纯的「孩子不听话」，而是夏令营现场的真实复杂性——<strong>大多数孩子积极参与，但少数孩子的抵触会影响教练信心。</strong><br><br><strong>先判断孩子为什么不参与：</strong>常见原因有四种——① 没听懂规则；② 等待时间太长，注意力跑掉；③ 活动和他没关系，找不到角色；④ 想通过「脱离规则」获得关注或掌控感。<br><br><strong>五个方向处理：</strong><br><strong>① 指令控制在「三句话」</strong>——从哪里开始、做什么、什么时候结束。讲完立刻示范，不要继续解释。用「示范」替代「重复讲」。<br><strong>② 给不听指令的孩子一个角色</strong>——「我想请你帮我做规则观察员」「你先帮我当器材队长」。很多孩子不是不想参与，而是不想以你安排的方式参与。给他一个合法角色，比追着他喊有效。<br><strong>③ 设置三档难度</strong>——探索版（距离短、动作少、可同伴协助）、标准版（正常规则）、进阶版（增加障碍、策略），让孩子自主选择而非公开区分「强弱」。<br><strong>④ 让孩子改造一个规则</strong>——「下一轮每队可以改一个规则，让游戏更好玩，但不能不安全」，从「被安排的人」变成「游戏共创者」。<br><strong>⑤ 调整奖项逻辑</strong>——不要只奖励第一名，也奖励最佳合作、最勇敢尝试、最大进步等（详见Q49）。<br><br><strong>给大学生的心理提醒：</strong>少数孩子抵触，不等于活动失败。80%的孩子积极参与，已经说明活动有基础。教练真正重要的能力，不是让所有孩子从第一分钟就完美配合，而是在孩子不配合的时候，仍然能观察、调整、沟通和继续尝试。",
+    source: "第三场交流会 · 现场志愿者反馈 & NeilHuang回应",
+    tags: ["不听指令", "三句话指令", "三档难度", "教练信心"] },
+
+  { id: 38, category: "management", categoryLabel: "课堂管理与秩序",
+    question: "小团体分组时只跟熟悉伙伴一起、有孩子落单不被接受怎么办？",
+    answer: "<strong>梨花团队遇到的情况：</strong>孩子们分组时喜欢跟熟悉的伙伴在一起，有少数孩子落单，其他组不太愿意接收。志愿者参与组队又觉得对其他组不公平。<br><br><strong>NeilHuang建议：</strong><br>① <strong>解决「公平」的担心</strong>——高年级孩子不愿带小龄孩子，核心担心是「影响成绩表现」。可以从规则上做调整让比赛更公平，或给接纳落单孩子的小组额外肯定和支持。<br>② <strong>某些环节单独带</strong>——如果孩子年龄差距太大（如幼升一跟5升六混班），某些竞技环节确实不适合硬放进去。可以提前跟孩子或哥哥讲好，某些环节由志愿者单独带他。<br>③ <strong>寻找适合的参与环节</strong>——不是所有环节都需要团队PK，有些个人挑战或体验式环节，小龄孩子也能很好地参与。",
+    source: "第三场交流会 · 梨花团队（刘鸿硕）分享 & NeilHuang回应",
+    tags: ["分组", "落单", "公平性", "年龄差异"] },
+
+  { id: 39, category: "management", categoryLabel: "课堂管理与秩序",
+    question: "众口难调：部分孩子想继续玩旧游戏、部分想换新游戏怎么办？",
+    answer: "<strong>孔欣欢团队遇到的情况：</strong>休息后部分孩子念念不忘上一个游戏想继续玩，部分想换新游戏，众口难调。<br><br><strong>NeilHuang建议：</strong><br>① <strong>在「无问题区」提前预告</strong>——在矛盾还没出现之前，提前跟大家讲：有的同学可能想多玩两轮，有的想玩新的，碰到这种情况怎么办？把问题抛给孩子们，让他们自己讨论。<br>② <strong>引导互相理解和共赢</strong>——理想状态下大家互相理解：「我们多玩一次，后面有好玩的游戏别人想玩我们也配合」。如果出现争执，教练用倾听的方式让孩子表达，再引导他们想办法——「不解决就没法继续」，他们会自己想出配合方案。<br>③ <strong>这个过程本身就是教育</strong>——引导孩子理解互相理解、共赢的价值，比单纯解决游戏安排问题更有意义。",
+    source: "第三场交流会 · 孔欣欢分享 & NeilHuang回应",
+    tags: ["众口难调", "无问题区", "共赢", "倾听"] },
+
+  { id: 40, category: "management", categoryLabel: "课堂管理与秩序",
+    question: "竞争性游戏导致孩子之间闹矛盾怎么办？",
+    answer: "<strong>孔欣欢团队的做法：</strong>有些小朋友胜负心较强，一直想赢，竞争性游戏容易引发矛盾。<br><br>解决方案：<br>① <strong>先稳定情绪</strong>——出现矛盾时先把情绪稳住，不要在情绪上头时继续游戏。<br>② <strong>减少竞争性游戏，增加团结性游戏</strong>——把PK类的游戏改为合作类，让大家一起完成任务而非互相对抗。<br>③ <strong>关注过程而非结果</strong>——在游戏设置上，让不同类型的孩子都有被看见的机会（参见Q49过程奖励机制）。",
+    source: "第三场交流会 · 孔欣欢分享",
+    tags: ["竞争性游戏", "胜负心", "团结性游戏"] },
+
+  { id: 41, category: "safety", categoryLabel: "安全与应急处置",
+    question: "孩子穿凉鞋来运动，多次提醒仍不听怎么办？",
+    answer: "<strong>谭佳欣团队遇到的情况：</strong>在家长群和课堂上多次提醒穿运动鞋，孩子还是穿凉鞋来，运动时危险性很大。<br><br><strong>建议：</strong><br>① <strong>从家长端沟通</strong>——在家长群里说明运动鞋的重要性，可结合中考体育成绩的要求引导家长重视。<br>② <strong>准备备用运动鞋</strong>——如果条件允许，营地可准备几双不同尺码的旧运动鞋备用。<br>③ <strong>设计凉鞋友好活动</strong>——对于实在没有运动鞋的孩子，安排不需要奔跑的安全活动（如原地投掷、身体感知等）。<br>④ <strong>安全底线不可妥协</strong>——如果活动确实需要跑动且孩子穿凉鞋，宁可让其在旁边做安全角色（计分员、观察员），也不能冒险。",
+    source: "第三场交流会 · 谭佳欣分享",
+    tags: ["运动鞋", "凉鞋", "家长沟通", "安全底线"] },
+
+  { id: 42, category: "gender", categoryLabel: "性别差异与分组策略",
+    question: "青春期女孩因着装担心走光不愿参与某些运动怎么办？",
+    answer: "<strong>临湖支队遇到的情况：</strong>五六年级甚至小升初的女孩进入青春期，对某些需要弯腰、跑跳的游戏有担心走光的顾虑，不愿参与。<br><br><strong>NeilHuang回应：</strong><br>① <strong>这很正常，要尊重</strong>——孩子有这样的想法没有毛病，着装不适合时有担心是合理的。<br>② <strong>提前规避</strong>——在设计游戏时就要考虑面对的人群，如果有穿裙子的女孩，避免设计需要大幅度弯腰、快速跑跳且容易走光的动作。<br>③ <strong>准备备选方案</strong>——现场发现有着装不适合的情况时，换不需要造成压力的备选游戏。<br>④ <strong>不强迫参与</strong>——对于确实不适合参与该环节的孩子，可以给她安排其他角色（观察员、计分员等），不要让她感到尴尬。",
+    source: "第三场交流会 · 临湖支队（王奕萱）分享 & NeilHuang回应",
+    tags: ["青春期", "着装安全", "备选方案", "尊重"] },
+
+  { id: 43, category: "curriculum", categoryLabel: "课程理念与教学法",
+    question: "高年级孩子觉得夏令营「没意思」、只重视学业怎么办？",
+    answer: "<strong>谭佳欣团队遇到的情况：</strong>五六年级孩子面临升学压力，大多数写「要好好学习、提升成绩」，觉得夏令营不能帮助提升成绩，参与时脸上看不到微笑。<br><br><strong>NeilHuang建议：</strong><br>① <strong>心态放平</strong>——孩子有这样的观念是环境中长期灌输的，我们没办法马上改变，不必因此产生情绪问题。<br>② <strong>用讲故事的方式引导</strong>——不讲大道理，而是在游戏总结时讲自己的故事：「我小时候也觉得要天天好好学习，后来发现劳逸结合很重要，只学习其他能力就被限制了。」用他们听得懂的语言交流。<br>③ <strong>从全面发展角度启发</strong>——「好好学习的目的是什么？将来在社会上有更好的发展。除了成绩，怎么跟人打交道、面对挑战时坚持到底，这些同样重要。」<br>④ <strong>在游戏中发现亮点</strong>——让孩子知道参与运动对他们在学习之外也有成长和进步，这是有价值的。<br><br><strong>益微青年补充：</strong>可从<strong>中考体育成绩占比越来越大</strong>的角度引导——好的体格是学习的基础。也可在家长接孩子时跟家长沟通，鼓励督促孩子多参与体育锻炼。",
+    source: "第三场交流会 · 谭佳欣分享 & NeilHuang & 益微青年回应",
+    tags: ["学业压力", "讲故事", "全面发展", "中考体育"] },
+
+  { id: 44, category: "management", categoryLabel: "课堂管理与秩序",
+    question: "一个教练带100多个孩子，后排看不到、参与度低怎么办？",
+    answer: "<strong>临湖支队遇到的情况：</strong>早上一个体育生教练统一带1-6年级100多人，其他5个教练在下面管纪律和演示动作。后排孩子看不到、有的蹲着不参与、有的跑走。<br><br><strong>NeilHuang建议：</strong><br>① <strong>队形调整</strong>——传统「升国旗」式的方块队形必然导致后排孩子看不到。如果场地允许，考虑半圆形或分组散点站位，增加教练与孩子之间的眼神交流。<br>② <strong>互动式热身替代做操</strong>——传统的原地拉伸（扩胸、转脚腕）孩子容易无聊。建议用互动游戏的方式热身，让孩子在跑动和小范围移动中激活身体，参与度更高。<br>③ <strong>教练与孩子的互动是关键</strong>——如果没有比较多的眼神交流和互动，孩子会失去参与感，容易走神或离开。<br>④ <strong>关注个体</strong>——其他教练不仅要管纪律，更要积极关注到每个小组的孩子，提升参与感。",
+    source: "第三场交流会 · 临湖支队（魏之栋、王奕萱）分享 & NeilHuang回应",
+    tags: ["大班级", "队形", "互动热身", "眼神交流"] },
+
+  { id: 45, category: "curriculum", categoryLabel: "课程理念与教学法",
+    question: "运动能力强的孩子只想玩自己的专项运动怎么办？",
+    answer: "<strong>小米团队遇到的情况：</strong>营地孩子体育成绩都很好，擅长打篮球的只想打篮球，擅长踢足球的只想踢足球，很难把注意力收回到设计的运动游戏里。<br><br><strong>NeilHuang回应：</strong><br>① <strong>游戏没有绝对的好坏</strong>——大家的体感、教练带领方式、现场小朋友的状态、场地天气都会有影响。灵活度完全给到大家，根据实际情况调整。<br>② <strong>关注孩子的需求并满足</strong>——孩子想要玩自己的游戏，可以给他们选择权。如果我们能把他们感兴趣的元素融入设计的活动中，也是可以尝试的点。<br>③ <strong>大游戏拆分成小模块</strong>——小米团队的做法：把一节大课用15分钟小模块进行，中间放10分钟让孩子玩自己想玩的，再收回来继续。体验感很好。<br>④ <strong>不用死守定稿</strong>——没有必要必须按我们的游戏来，不好玩就要求他们来玩。灵活调整才是关键。",
+    source: "第三场交流会 · 小米团队分享 & NeilHuang回应",
+    tags: ["专项运动", "选择权", "拆分模块", "灵活调整"] },
+
+  { id: 46, category: "relationship", categoryLabel: "关系建立与沟通",
+    question: "运动能力两极分化、团队内互相指责怎么办？",
+    answer: "<strong>小米团队遇到的情况：</strong>运动能力强的很积极参与，运动不好的玩两轮就不想参与自己去玩了。团队内互相责怪的情绪大于合作意识，尽管用藏宝袋一对一写信引导，效果仍不理想。<br><br><strong>NeilHuang建议：</strong><br>① <strong>接受局限性</strong>——孩子长期在当地环境中形成的行为模式，短短一两周很难彻底改变。我们能做的就是尽自己的力量给一些引导，至于能吸收多少不需要有太大期待。<br>② <strong>一对一面对面交流</strong>——藏宝袋书信效果有限时，可以尝试面对面交流。不管是运动能力强的还是弱的，站在倾听的角度接纳他们的想法。<br>③ <strong>用故事而非讲道理</strong>——跟他们做交心的分享，告诉他们外面的世界、社会是什么样的，从亲密交流中传递互相支持的价值观。<br>④ <strong>种下火苗就够了</strong>——有些东西没办法让孩子马上转变，有一个小的火苗，就够了。",
+    source: "第三场交流会 · 小米团队分享 & NeilHuang回应",
+    tags: ["两极分化", "互相指责", "一对一交流", "藏宝袋"] },
+
+  { id: 47, category: "tools", categoryLabel: "工具与资源",
+    question: "人数多难以兼顾每个孩子，有什么组织方式？",
+    answer: "<strong>蜜蜂团队（青野队）的做法——「闯关模式」：</strong><br><br>把一系列游戏不是变成「全部完成第一个再完成第二个」，而是变成<strong>闯关一样</strong>——一个人完成一个区域的任务，再去另一个区域完成另一个。每个不同区域有不同老师负责。<br><br><strong>优势：</strong><br>① 尽可能让每个孩子都有参与感，不会出现大量等待<br>② 不同营可以分不同难度同步进行<br>③ 老师分工明确，每个区域有专人指导<br><br><strong>注意：</strong>觉察类内容不要太长时间合在一起做，否则人数多会导致混乱。简洁进行，最后合在一起总结即可。",
+    source: "第三场交流会 · 蜜蜂团队（杨淑涵）分享",
+    tags: ["闯关模式", "分区负责", "分难度", "参与感"] },
+
+  { id: 48, category: "curriculum", categoryLabel: "课程理念与教学法",
+    question: "大小营合在一起还是分开？撒开脚丫和趣味运动会感觉重复怎么办？",
+    answer: "<strong>蜜蜂团队（青野队）的两个问题：</strong><br><br><strong>问题一：大小营合还是分？</strong><br>合在一起的出发点是希望让小营的分享给大营一些启发，大营给小营榜样的引导。但人数太多难以顾及每个孩子的情绪，大营也没法做更深入的探究。<br><strong>NeilHuang建议：</strong>游戏时可以分开（按不同难度同步进行），最后合在一起总结。分开不影响交流，合在一起也不影响总结。<br><br><strong>问题二：撒开脚丫和趣味运动会感觉重复？</strong><br><strong>NeilHuang回应：</strong>这两件事本身可以是一件事。撒开脚丫也是运动，运动会也是运动，没必要拆成两件事。它可以是一个组合在一起的事情。",
+    source: "第三场交流会 · 蜜蜂团队（杨淑涵）分享 & NeilHuang回应",
+    tags: ["大小营", "分合策略", "运动会整合"] },
+
+  { id: 49, category: "tools", categoryLabel: "工具与资源",
+    question: "奖项设置不满足孩子需求、参与积极性下降怎么办？",
+    answer: "如果孩子只为了奖品参加，活动会被奖品绑架——奖品一不够大，积极性就坍塌。<br><br><strong>解决方案：把奖项从「结果奖励」改成「过程奖励」。</strong><br><br><strong>不要只设：</strong>第一名、冠军队、最快队。<br><strong>可以增设：</strong><br>① 最佳合作队<br>② 最会鼓励队友奖<br>③ 最勇敢尝试奖<br>④ 最佳规则创造奖<br>⑤ 最佳倾听身体奖<br>⑥ 最大进步奖<br>⑦ 最会照顾队友奖<br>⑧ 最佳坚持奖<br><br>这样不同类型的孩子都有被看见的机会。<br><br><strong>现场话术：</strong>「今天不是只有最快的队伍会被看到。我们也会看到谁帮助了队友、谁愿意尝试、谁能调整自己、谁能鼓励别人。」<br><br>这和 Boundless Girls 的目标更一致：不是把运动变成小型竞技筛选器，而是让更多孩子愿意参与。",
+    source: "第三场交流会 · 现场志愿者反馈 & NeilHuang回应",
+    tags: ["奖项设置", "过程奖励", "参与积极性"] },
+
+  { id: 50, category: "relationship", categoryLabel: "关系建立与沟通",
+    question: "教练面对少数孩子抵触产生挫败感，怎么调整心态？",
+    answer: "<strong>这是非常普遍的真实感受。</strong>教练的注意力容易被少数「问题行为」捕获，导致挫败感放大——即使90%的孩子在积极参与，教练记住的往往是那10%的抵触。<br><br><strong>调整方式：</strong><br>① <strong>少数孩子不参与，不等于活动失败</strong>——它只是提醒我们需要调整入口、难度和角色。80%的孩子积极参与，已经说明活动有基础。<br>② <strong>注意力重分配</strong>——每次复盘时先说3个积极参与的孩子的名字和具体表现，再说需要关注的问题。训练自己先看到多数，再看少数。<br>③ <strong>没有标准答案，发挥创造力</strong>——所有问题都要基于当下实际情况创造性思考。别的队友的方法拿过来用发现不行，这很正常。<br>④ <strong>享受这个过程</strong>——就算孩子们出现各种问题，接受它，这是一段很难得的经历。去认识不同的小朋友，未来会帮助到你去更好地接触不同的人。<br>⑤ <strong>每天觉察和复盘</strong>——如果大家能够每天有这样的觉察或复盘，从夏令营中的收获会很高。它本身就是思维的提升。",
+    source: "第三场交流会 · NeilHuang总结",
+    tags: ["挫败感", "注意力管理", "心态调整", "每日复盘"] },
+
+  { id: 51, category: "weather", categoryLabel: "天气与场地限制",
+    question: "天气多变（暴雨+高温交替），怎么灵活安排课程？",
+    answer: "<strong>小米团队遇到的情况：</strong>营地又下雨又出太阳，户外课无法按计划整块进行。<br><br><strong>小米团队的做法：</strong><br>① <strong>灵活穿插</strong>——把户外课从集中在一个大块时间，改为穿插进行。比如上午上一节室内课，突然天晴了就马上带下去把户外课上了。<br>② <strong>运动游戏和舞蹈游戏灵活调配</strong>——舞蹈游戏可以在室内进行，运动游戏看天气灵活安排。<br>③ <strong>大模块拆小模块</strong>——把一节大的运动游戏课拆成15分钟小模块，中间放10分钟让孩子自由活动。<br><br><strong>NeilHuang回应：</strong>灵活度完全给到大家，目标是能够把想让孩子们体验的内容传递到位。根据实际情况灵活调整，没有标准。",
+    source: "第三场交流会 · 小米团队分享 & NeilHuang回应",
+    tags: ["天气多变", "灵活穿插", "模块拆分", "室内外调配"] },
+
+  { id: 52, category: "curriculum", categoryLabel: "课程理念与教学法",
+    question: "偏远地区孩子运动见识少、眼界窄，怎么拓展？",
+    answer: "<strong>临湖支队（王奕萱）的发现：</strong>安徽偏远地区的孩子对各种运动项目了解极少——问有没有人会游泳，只有一个人会，其他人连把头潜进水里都不会。虽然有手机和互联网，但孩子并不主动去看外面的体育运动、舞蹈等内容。<br><br><strong>建议：</strong><br>① <strong>多给他们讲外面的运动</strong>——不只是玩，让他们知道得多一点。讲各种运动类项目，让他们了解外面的世界。<br>② <strong>哪怕不拥有能力，至少拥有知道的权利</strong>——如果连知道的权利都被剥夺，他们将来会更难接触到这些东西。<br>③ <strong>结合当地特色</strong>——小米团队的做法：请当地会跳扁担舞的阿姐来教学，结合当地特色开展舞蹈课，很有意思。<br>④ <strong>开拓视野本身就是价值</strong>——撒开脚丫不只是让孩子运动，也是让他们看到更多可能性。",
+    source: "第三场交流会 · 临湖支队（王奕萱）& 小米团队分享",
+    tags: ["偏远地区", "开拓视野", "当地特色", "扁担舞"] },
+];
+
+// ===== Render =====
+let currentCategory = "all";
+let currentSearch = "";
+
+function renderQA() {
+  const list = document.getElementById("qaList");
+  const noResults = document.getElementById("noResults");
+  let filtered = qaData;
+
+  // Filter by category
+  if (currentCategory !== "all") {
+    filtered = filtered.filter(q => q.category === currentCategory);
+  }
+
+  // Filter by search
+  if (currentSearch.trim()) {
+    const term = currentSearch.toLowerCase().trim();
+    filtered = filtered.filter(q =>
+      q.question.toLowerCase().includes(term) ||
+      q.answer.toLowerCase().includes(term) ||
+      q.tags.some(t => t.toLowerCase().includes(term)) ||
+      q.categoryLabel.toLowerCase().includes(term)
+    );
+  }
+
+  // Update count
+  const countEl = document.getElementById("searchCount");
+  if (currentSearch.trim() || currentCategory !== "all") {
+    countEl.textContent = `找到 ${filtered.length} 个相关问题`;
+  } else {
+    countEl.textContent = `共 ${filtered.length} 个问题`;
+  }
+
+  // Show/hide no results
+  if (filtered.length === 0) {
+    list.innerHTML = "";
+    noResults.style.display = "block";
+    return;
+  }
+  noResults.style.display = "none";
+
+  // Render items
+  list.innerHTML = filtered.map((q, idx) => {
+    const tagsHtml = q.tags.map(t => `<span class="qa-tag">${t}</span>`).join("");
+    return `
+      <div class="qa-item" data-category="${q.category}" data-id="${q.id}">
+        <div class="qa-question" onclick="toggleQA(${q.id})">
+          <div class="qa-number">${q.id}</div>
+          <div class="qa-question-text">${highlightText(q.question)}</div>
+          <div class="qa-toggle">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </div>
+        </div>
+        <div class="qa-answer">
+          <div class="qa-answer-inner">
+            <div class="qa-answer-text">${highlightText(q.answer)}</div>
+            <div class="qa-tags">${tagsHtml}</div>
+            <div class="qa-source">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+              来源：${q.source}
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+  }).join("");
+
+  // Auto-open first item if searching
+  if (currentSearch.trim() && filtered.length > 0) {
+    const firstItem = list.querySelector(".qa-item");
+    if (firstItem) firstItem.classList.add("open");
+  }
+}
+
+function highlightText(text) {
+  if (!currentSearch.trim()) return text;
+  const term = currentSearch.trim();
+  const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const regex = new RegExp(`(${escaped})`, 'gi');
+  return text.replace(regex, '<mark>$1</mark>');
+}
+
+function toggleQA(id) {
+  var item = document.querySelector('.qa-item[data-id="' + id + '"]');
+  if (item) {
+    item.classList.toggle("open");
+    // Recalculate max-height for dynamic content
+    if (item.classList.contains("open")) {
+      var answer = item.querySelector(".qa-answer");
+      var inner = answer.querySelector(".qa-answer-inner");
+      var h = inner.offsetHeight;
+      answer.style.maxHeight = (h + 40) + "px";
+    } else {
+      var answer2 = item.querySelector(".qa-answer");
+      if (answer2) answer2.style.maxHeight = "0px";
+    }
+  }
+}
+
+function filterCategory(cat) {
+  currentCategory = cat;
+  var chips = document.querySelectorAll(".cat-chip");
+  for (var i = 0; i < chips.length; i++) {
+    if (chips[i].getAttribute("data-cat") === cat) {
+      chips[i].classList.add("active");
+    } else {
+      chips[i].classList.remove("active");
+    }
+  }
+  renderQA();
+}
+
+function handleSearch() {
+  currentSearch = document.getElementById("searchInput").value;
+  renderQA();
+}
+
+// ===== Init =====
+renderQA();
+
+// Keyboard shortcut: focus search with /
+document.addEventListener("keydown", function(e) {
+  if (e.key === "/" && document.activeElement.tagName !== "INPUT") {
+    e.preventDefault();
+    document.getElementById("searchInput").focus();
+  }
+  // ESC to clear search
+  if (e.key === "Escape" && document.activeElement.id === "searchInput") {
+    document.getElementById("searchInput").value = "";
+    handleSearch();
+    document.getElementById("searchInput").blur();
+  }
+});
+
+// Prevent body scroll when touching inside interactive elements
+(function() {
+  var touchStartY = 0;
+  document.addEventListener("touchstart", function(e) {
+    touchStartY = e.touches[0].clientY;
+  }, { passive: true });
+})();
+</script>
+
+</body>
+</html>
